@@ -6,6 +6,8 @@
     /* Colors */
     --mainColor: #f14a60;
     --seccondColor: #fb7381;
+    --black: #000;
+    --white: #fff;
 
     /* Font Sizes */
     --headerSize: 100px;
@@ -45,7 +47,7 @@
 .navbar ul li a {
     position: relative;
     text-decoration: none;
-    color: #000;
+    color: var(--black);
     padding: 0 10px;
 }
 .navbar ul li a::after {
@@ -77,32 +79,8 @@
 .right-column {
     flex-basis: 50%;
 }
-.right-column {
-    display: flex;
-    align-items: center;
-}
-.right-column img {
-    width: 100%;
-}
-.search-box {
-    width: 45%;
-    display: flex;
-    padding-bottom: 3px;
-    border-bottom: 1px solid #ddd;
-    margin: 10px 0 30px;
-}
-.search-box img {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
-.search-box input {
-    width: 100%;
-    margin-left: 15px;
-    font-size: 17px;
-    border: 0;
-    outline: none;
-}
+
+/* Left Column */
 .left-column h1 {
     font-size: var(--headerSize);
 }
@@ -133,7 +111,7 @@
 .btn .primary-btn {
     background: linear-gradient(var(--seccondColor), var(--mainColor));
     box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
-    color: #fff;
+    color: var(--white);
 }
 .social-icons {
     position: relative;
@@ -153,5 +131,33 @@
     height: 1px;
     top: -100%;
     left: 0;
-    background: #000;
+    background: var(--black);
+}
+
+/* Right Column */
+.right-column {
+    display: flex;
+    align-items: center;
+}
+.right-column img {
+    width: 100%;
+}
+.search-box {
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+}
+.search-box img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.search-box input {
+    width: 100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
 }
